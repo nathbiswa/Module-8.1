@@ -5,18 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recape flex,Responsip & Mdedia quary </title>
-<style>
-.container{
+    <style>
+        .container {
 
+            display: flex;
+            gap: 10px;
+        }
+
+        .box {
+            padding: 10px;
+            background-color: aqua;
+            border-radius: 10px;
+        }
+        .items{
+            background-color: rgb(174, 35, 35);
+            width: 100px;
+            padding: 10px;
+        }
+
+.box-container{
     display: flex;
-   gap: 10px;
+    gap: 20px;
+    flex-wrap: wrap;
+
 }
-    .box{
-        padding: 10px;
-        background-color: aqua;
-        border-radius: 10px;
-    }
-</style>
+
+        @media screen and (max-width: 576px) {
+
+            .container {
+                flex-direction: column;
+            }
+             .items{
+            width: 100%;
+        }
+        }
+    </style>
 
 
 </head>
@@ -34,6 +57,28 @@
             <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia quibusdam cupiditate autem est fuga
                 neque doloribus. Quia assumenda facilis sapiente.</p>
         </div>
+    </div>
+    <div class="box-container">
+        <div class="items">box-1</div>
+        <div class="items">box-2</div>
+        <div class="items">box-3</div>
+        <div class="items">box-4</div>
+        <div class="items">box-5</div>
+        <div class="items">box-6</div>
+        <div class="items">box-7</div>
+        <div class="items">box-8</div>
+        <div class="items">box-9</div>
+        <div class="items">box-10</div>
+        <div class="items">box-11</div>
+        <div class="items">box-12</div>
+        <div class="items">box-13</div>
+        <div class="items">box-14</div>
+        <div class="items">box-15</div>
+        <div class="items">box-16</div>
+        <div class="items">box-17</div>
+        <div class="items">box-18</div>
+        <div class="items">box-19</div>
+        <div class="items">box-20</div>
     </div>
 
 
